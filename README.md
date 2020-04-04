@@ -20,7 +20,15 @@ Commands for reproducing 2 models:
 
 `python train_rnn.py --rnn_model LSTM`
 
+### GRU
 
+#### GRU by Keras
+
+`python train_keras.py --rnn_model GRU`
+
+#### GRU by Pytorch
+
+`python train_rnn.py --rnn_model GRU`
 
 
 <!-- ### Aids
@@ -34,7 +42,7 @@ The file `heat.csv` contains the raw temperature data. The 200 rows correspond t
 The file `heat_relations.csv` contains the spatial relation between the 41 space points. It is a 41 by 41 adjacency matrix _A_, where _A(i, j)_ = 1 means that series _i_ is a direct neighbor of series _j_ in space, and is 0 otherwise.
 ## Model
 ### Spatio-Temporal Neural Networks for Space-Time Series Forecasting and Relation Discovery -->
-
+<!-- 
 ICDM 2018 - IEEE International Conference on Data Mining series (ICDM)
 
 [Conference Paper](https://ieeexplore.ieee.org/document/8215543/)
@@ -61,7 +69,7 @@ Commands for reproducing synthetic experiments:
 
 `python train_stnn.py --dataset flu --outputdir output_flu --manualSeed 8837 --xp stnn_d --mode discover --patience 1000 --l1_rel 3e-6`
 
-`python train_stnn.py --dataset heat --outputdir output_heat --manualSeed 9690 --xp stnn_d --mode discover --patience 1000 --l1_rel 3e-6`
+`python train_stnn.py --dataset heat --outputdir output_heat --manualSeed 9690 --xp stnn_d --mode discover --patience 1000 --l1_rel 3e-6` -->
 <!-- ## Modulated Heat Diffusion
 ### STNN
 `python train_stnn.py --dataset heat_m --outputdir output_heat_m --manualSeed 679 --xp stnn`
@@ -72,7 +80,7 @@ Commands for reproducing synthetic experiments:
 ### STNN-D(iscovery)
 `python train_stnn_.py --dataset heat_m --outputdir output_m --xp test --manualSeed 7664 --mode discover --patience 500 --l1_rel 3e-6` -->
 
-### RNN
+<!-- ### RNN
 Here **LSTM** and **GRU** are used.
 
 Commands for reproducing synthetic experiments:
@@ -87,4 +95,4 @@ Commands for reproducing synthetic experiments:
 
 `python train_rnn.py --dataset flu --model GRU --manualSeed 1471 --xp GRU_flu`
 
-`python train_rnn.py --dataset heat --model GRU --manualSeed 6131 --xp GRU_heat`
+`python train_rnn.py --dataset heat --model GRU --manualSeed 6131 --xp GRU_heat` -->
